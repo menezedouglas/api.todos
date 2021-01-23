@@ -60,3 +60,70 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+<hr>
+
+#ToDo's API
+
+Desenvolvido por [Douglas Menezes](https://www.linkedin.com/in/douglas-menezes-526a45148/) 
+
+### Para criar uma cópia em ambiente local
+<pre>
+git clone https://github.com/menezedouglas/api.todos.git
+</pre>
+
+### Instalando dependências
+<pre>
+cd api.todos
+
+composer install
+</pre>
+
+### Criando banco de dados
+
+Crie um banco de dados vazio em MySQL/MariaDB e configure-o o ".env" do projeto.
+
+Caso não exista um arquivo ".env", duplique e renomeie o ".env.example"
+
+Altere as variáveis:
+
+<pre>
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=database_name
+DB_USERNAME=database_user
+DB_PASSWORD=database_password
+</pre>
+
+Uma vez criado e configurado o banco de dados, rode as migrations
+
+<pre>
+php artisan migrate:fresh
+</pre>
+
+### Subindo o servidor
+
+<pre>
+php artisan serve
+</pre>
+
+ou
+
+<pre>
+cd public
+
+php -S localhost:8000
+</pre>
+
+### Para ver os End Points (Rotas) disponíveis
+
+<pre>
+php artisan route:list
+</pre>
+
+### Para ver os outros comandos do Laravel
+
+<pre>
+php artisan
+</pre>
